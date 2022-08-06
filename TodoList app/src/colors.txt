@@ -1,0 +1,7 @@
+Gradient colors
+
+#F06292 
+#E55C8A
+
+background-color: #3C424A;
+color: #ABB3BA;

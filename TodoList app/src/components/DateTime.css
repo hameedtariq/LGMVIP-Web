@@ -1,0 +1,13 @@
+.dateTime {
+    color: #E1EAF2;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.dateTime h1 {
+    font-size: 1.6rem;
+}
+
+.dateTime p {
+    color: #aaa;
+}

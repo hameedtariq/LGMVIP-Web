@@ -1,0 +1,85 @@
+
+.item {
+    margin: 10px 0px;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    align-items: center;
+    position: relative;
+}
+
+.item button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #191b1f;
+    cursor: pointer;
+}
+
+.item button:hover {
+    color: #ABB3BA;
+}
+
+.checkbox {
+    color: #fff;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+
+
+.options {
+    position: absolute;
+    z-index: 100;
+    right: 3.5%;
+    bottom: -125%;
+    border-radius: 1px;
+    padding: 8px 8px; 
+    padding-right: 10px;
+    background-color:  #484F59;
+}
+
+
+.options:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    /* border-left: 5px solid red; */
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    
+    border-bottom: 5px solid #484F59;
+    /* background-color: red; */
+    position: absolute;
+    top: -4px;
+    right: 0;
+}
+
+.option {
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+ 
+}
+
+.option:hover {
+    color: #191b1f;
+}
+
+.pinIcon {
+    transform: scale(0.7);
+}
+
+.deleteIcon {
+    transform: scale(0.7);
+}
+
+.pinnedTaskMark {
+    position: absolute;
+    color: #E55C8A;
+    left: -13px;
+    z-index: 100;
+}

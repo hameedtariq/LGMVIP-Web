@@ -1,0 +1,20 @@
+.navbar {
+    height: 50px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #2e3338;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.logo p{
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    color: #E55C8A;
+    font-weight: bold;
+}
+
+.logo p::first-letter {
+    font-size: 2rem;
+    letter-spacing: -1px;
+}

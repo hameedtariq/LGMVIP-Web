@@ -1,0 +1,58 @@
+.todoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+   
+}
+
+.todo {
+    height: 80vh;
+    background-color: #3C424A;
+    border-radius: 5px;
+    min-width: 500px;
+}
+.todowrapper {
+    padding: 50px;
+    height: 60vh;
+}
+
+.addTask {
+    background-color: #2f343a;
+    width: 100%;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    padding: 2px 8px;
+}
+
+/* .addTask:focus-within {
+    outline: black;
+} */
+
+.addTask input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 7px 10px;
+    width: 94%;
+    color: #aaa;
+}
+
+.list {
+    overflow: auto;
+    height: 100%;
+
+}
+
+
+.listIcon {
+}
+
+
+@media screen and (max-width: 500px) {
+    .todo {
+        height: 100%;
+        width: 100%;
+    }
+}
