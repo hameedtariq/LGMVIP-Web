@@ -1,0 +1,8 @@
+.user {
+    margin: 10px 20px;
+}
+
+.avatar img{
+    width: 100px;
+    border-radius: 50%;
+}

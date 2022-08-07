@@ -1,0 +1,12 @@
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    background-color: #320d3e;
+    width: 70px;
+}
+
+.sidebar .logo p{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
