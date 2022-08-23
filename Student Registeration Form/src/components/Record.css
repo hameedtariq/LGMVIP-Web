@@ -1,0 +1,42 @@
+.record {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-left: 2px solid #285461;
+
+}
+
+.list {
+    width: 500px;
+    margin-top: 100px;
+}
+
+.card:first-child {
+    background-color: #285461;
+    color: #fff;
+    font-weight: bold;
+}
+
+.card:nth-child(even) {
+    background-color: #31677733;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 5px;
+}
+
+.desc:nth-child(1) {
+    line-height: inherit;
+}
+
+.desc {
+    line-height: 0.8rem;
+}
+
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
