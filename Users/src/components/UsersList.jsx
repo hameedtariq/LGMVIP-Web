@@ -9,9 +9,11 @@ import './UsersList.css'
 
 const UsersList = () => {
     const [users, setUsers] = useState([]);
-    const [loading, setLoading] = useState(true);
-    useEffect(()=> {
+    const [loading, setLoading] = useState(false);
+    const loadUsers = (e)=> {
+        e.preventDefault();
         const fetchData = async () => {
+            setLoading(true);
             const res = await axios.get('https://reqres.in/api/users?page=1');
             if(res.status === 200){
                 setUsers(res.data.data)
@@ -19,6 +21,10 @@ const UsersList = () => {
             }
         }
         fetchData();
+    }
+
+    useEffect(()=> {
+        
     }, [])
   return (
     <>
@@ -28,9 +34,10 @@ const UsersList = () => {
         >
             <CircularProgress color="secondary" />
         </Backdrop>
-        <div className='usersList'>
+        {users.length ? <div className='usersList'>
             {users.map((user)=> <User {...user} key={user.id} />)}
-        </div>
+        </div> : <div className='btn'> <button onClick={loadUsers}>Fetch Users</button> </div>
+        }
     </>
   )
 }

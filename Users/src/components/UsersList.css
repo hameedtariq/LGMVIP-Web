@@ -5,8 +5,31 @@
     height: 100vh;
     flex-wrap: wrap;
     margin-left: 70px;
+    padding: 20px 0;
+
 }
 
+.btn {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    background: transparent;
+    padding: 6px 12px;
+    color: inherit;
+    border: 1px solid #ffd79d;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    color: #40134d;;
+    background: #ffd79d;
+}
 
 @media screen and (max-width: 960px) {
     .usersList {
